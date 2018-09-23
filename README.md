@@ -9,10 +9,10 @@ Use this code to run periodic URL update taken from Microsoft office 365 address
 #### 2. Download office365-dynamic-update.sh by running this command:
 ```
 cd /home/admin
-curl -o office365-dynamic-update.sh -s  https://raw.githubusercontent.com/ianwijaya/f5-office365-pb-dynamic-update/master/office365-dynamic-update.sh
+curl -o office365-dynamic-update.sh -s  https://raw.githubusercontent.com/ianwijaya/f5-office365-pb-dynamic-update/master/office365-dynamic-update-rest.sh
 
 ```
-
+if for whatever reason you want to use the old XML list, use this URL instead "https://raw.githubusercontent.com/ianwijaya/f5-office365-pb-dynamic-update/master/office365-dynamic-update.sh"
 #### 3. Create datagroup
 ```
 echo "a" >> /tmp/office365-dg.txt
