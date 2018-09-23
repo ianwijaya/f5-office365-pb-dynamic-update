@@ -28,5 +28,5 @@ modify sys icall script Drafts/office365-script.txt definition {  exec /bin/bash
 #### 5. Create iCall handler
 ```
 create sys icall handler periodic Drafts/office365-handler script Drafts/office365-script.txt interval 3600 status active
-``
+```
 3600 -> update will run every 1 hour.
