@@ -1,0 +1,11 @@
+when HTTP_PROXY_REQUEST {
+log local0.info "[HTTP::method] [HTTP::host] [HTTP::uri]"
+if { [class match [HTTP::host] contains ext_o365_url] }{
+  HTTP::proxy enable
+  log local0.info "* BIG-IP *"
+} else {
+  HTTP::proxy disable
+  log local0.info "* Web Proxy *"
+  pool pool-web-proxy
+}
+}
